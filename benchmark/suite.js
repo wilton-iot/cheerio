@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var fs = require('fs');
 var path = require('path');
 
@@ -89,3 +90,5 @@ Suites.prototype._benchCheerio = function(suite, markup, options) {
     testFn.call(null, $, setupData);
   });
 };
+
+return module.exports;});

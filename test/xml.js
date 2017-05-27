@@ -1,7 +1,7 @@
-var expect = require('expect.js'),
-    cheerio = require('..'),
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var cheerio = require('cheerio'),
     _ = {
-      extend: require('lodash.assignin')
+      extend: require('lodash/assignIn')
     };
 
 var xml = function(str, options) {
@@ -58,3 +58,5 @@ describe('render', function() {
   });
 
 });
+
+return module.exports;});

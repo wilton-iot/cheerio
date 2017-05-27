@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 /* jshint indent: false */
 exports.fruits = [
   '<ul id="fruits">',
@@ -70,3 +71,5 @@ exports.forms = [
   '<form id="textarea"><textarea name="fruits">Apple\nOrange</textarea></form>',
   '<form id="spaces"><input type="text" name="fruit" value="Blood orange" /></form>'
 ].join('');
+
+return module.exports;});

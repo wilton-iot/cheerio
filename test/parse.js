@@ -1,6 +1,6 @@
-var expect = require('expect.js'),
-    parse = require('../lib/parse'),
-    defaultOpts = require('..').prototype.options;
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('cheerio/lib/parse'),
+    defaultOpts = require('cheerio').prototype.options;
 
 
 // Tags
@@ -250,3 +250,5 @@ describe('parse', function() {
   });
 
 });
+
+return module.exports;});

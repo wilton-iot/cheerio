@@ -1,6 +1,7 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var expect = require('expect.js'),
-  cheerio = require('../..'),
-  forms = require('../fixtures').forms;
+  cheerio = require('cheerio/lib/..'),
+  forms = require('cheerio/lib/fixtures').forms;
 
 describe('$(...)', function() {
 
@@ -153,3 +154,5 @@ describe('$(...)', function() {
   });
 
 });
+
+return module.exports;});

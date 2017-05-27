@@ -1,11 +1,12 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var expect = require('expect.js');
 
-var cheerio = require('../..');
-var fruits = require('../fixtures').fruits;
-var vegetables = require('../fixtures').vegetables;
-var food = require('../fixtures').food;
-var chocolates = require('../fixtures').chocolates;
-var inputs = require('../fixtures').inputs;
+var cheerio = require('cheerio/lib/..');
+var fruits = require('cheerio/lib/fixtures').fruits;
+var vegetables = require('cheerio/lib/fixtures').vegetables;
+var food = require('cheerio/lib/fixtures').food;
+var chocolates = require('cheerio/lib/fixtures').chocolates;
+var inputs = require('cheerio/lib/fixtures').inputs;
 var toArray = Function.call.bind(Array.prototype.slice);
 
 describe('$(...)', function() {
@@ -783,3 +784,5 @@ describe('$(...)', function() {
   });
 
 });
+
+return module.exports;});

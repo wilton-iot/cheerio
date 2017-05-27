@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var expect = require('expect.js');
-var cheerio = require('../..');
+var cheerio = require('cheerio/lib/..');
 
 describe('$(...)', function() {
 
@@ -86,3 +87,5 @@ describe('$(...)', function() {
   });
 
 });
+
+return module.exports;});

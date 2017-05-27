@@ -1,6 +1,7 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 #!/usr/bin/env node
 
-var Suites = require('./suite');
+var Suites = require('cheerio/lib/suite');
 var suites = new Suites();
 
 var regexIdx = process.argv.indexOf('--regex') + 1;
@@ -331,3 +332,5 @@ suites.add('attributes - Add Remove class', 'jquery.html', {
     $lis.removeClass('foo');
   }
 });
+
+return module.exports;});

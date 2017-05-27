@@ -1,9 +1,10 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var expect = require('expect.js'),
-  cheerio = require('../..'),
-  food = require('../fixtures').food,
-  fruits = require('../fixtures').fruits,
-  drinks = require('../fixtures').drinks,
-  text = require('../fixtures').text;
+  cheerio = require('cheerio/lib/..'),
+  food = require('cheerio/lib/fixtures').food,
+  fruits = require('cheerio/lib/fixtures').fruits,
+  drinks = require('cheerio/lib/fixtures').drinks,
+  text = require('cheerio/lib/fixtures').text;
 
 describe('$(...)', function() {
 
@@ -1411,3 +1412,5 @@ describe('$(...)', function() {
     });
   });
 });
+
+return module.exports;});

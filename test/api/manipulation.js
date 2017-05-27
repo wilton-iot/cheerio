@@ -1,6 +1,7 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var expect = require('expect.js'),
-    cheerio = require('../..'),
-    fruits = require('../fixtures').fruits,
+    cheerio = require('cheerio/lib/..'),
+    fruits = require('cheerio/lib/fixtures').fruits,
     toArray = Function.call.bind(Array.prototype.slice);
 
 describe('$(...)', function() {
@@ -1455,3 +1456,5 @@ describe('$(...)', function() {
   });
 
 });
+
+return module.exports;});
