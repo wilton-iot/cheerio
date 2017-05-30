@@ -1,4 +1,8 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var test = require("tape-compat");
+var describe = test.describe;
+var it = test.it;
+var expect = test.expect;    
 var cheerio = require('cheerio'),
     _ = {
       extend: require('lodash/assignIn')
