@@ -55,5 +55,13 @@
   },
   "scripts": {
     "test": "make test"
+  },
+  "wilton": {
+    "excludes": [
+      "benchmark",
+      "scripts",
+      "test",
+      "Makefile"
+    ]
   }
 }
