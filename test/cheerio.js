@@ -1,10 +1,10 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 var test = require("tape-compat");
 var describe = test.describe;    
 var it = test.it;    
 var expect = test.expect;
 var htmlparser2 = require('htmlparser2'),
-    $ = require('cheerio/'),
+    $ = require('cheerio'),
     fixtures = require('cheerio/test/fixtures'),
     fruits = fixtures.fruits,
     food = fixtures.food,
@@ -357,4 +357,4 @@ describe('cheerio', function() {
   });
 });
 
-return module.exports;});
+require = requireOrig;});

@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 /**
  * Export cheerio (with )
  */
@@ -11,4 +11,4 @@ exports = module.exports = require('cheerio/lib/cheerio');
 
 exports.version = "0.22.0";//require('cheerio/lib/package.json').version;
 
-return module.exports;});
+require = requireOrig;});

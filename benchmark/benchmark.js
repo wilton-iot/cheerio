@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 
 var Suites = require('cheerio/lib/suite');
 var suites = new Suites();
@@ -332,4 +332,4 @@ suites.add('attributes - Add Remove class', 'jquery.html', {
   }
 });
 
-return module.exports;});
+require = requireOrig;});

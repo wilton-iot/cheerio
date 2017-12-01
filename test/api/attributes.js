@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 var expect = require('expect.js');
 
 var cheerio = require('cheerio/lib/..');
@@ -785,4 +785,4 @@ describe('$(...)', function() {
 
 });
 
-return module.exports;});
+require = requireOrig;});
